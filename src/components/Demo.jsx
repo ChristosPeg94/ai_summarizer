@@ -23,6 +23,9 @@ const Demo = () => {
     if (articlesFromLocalStorage) {
       setAllArticles(articlesFromLocalStorage);
     }
+
+    // Returning true to keep the event listener active
+    return true;
   }, []);
 
   const handleSubmit = async (e) => {
