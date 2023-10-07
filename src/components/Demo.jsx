@@ -44,6 +44,8 @@ const Demo = () => {
       setAllArticles(updatedAllArticles);
       localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
     }
+    // Returning true to keep the event listener active
+    return true;
   };
 
   // copy the url and toggle the icon for user feedback
